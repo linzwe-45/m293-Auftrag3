@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="d-flex">
+    <nav class="sidebar border-end">
+        <div class="sidebar-header">
+            <h3 class="m-0">Menu</h3>
+        </div>
+        
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a href="../index.html" class="nav-link">Startseite</a>
+            </li>
+            <li class="nav-item">
+                <a href="termin.html" class="nav-link">Termin buchen</a>
+            </li>
+            <li class="nav-item">
+                <a href="../pages/login.html" class="nav-link active">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content-area">
+        <header class="custom-header d-flex flex-column-reverse flex-md-row align-items-center justify-content-between px-3 py-3">
+            <button class="btn btn-light-gray d-md-none mt-3 mt-md-0 fs-5 fw-bold" id="menuToggle">
+                Menu
+            </button>
+            <h2 class="m-0 headerText d-none d-md-block">Melanie Dubois</h2>
+            <img id="logoHeadTer" src="img/logo.png" alt="Logo Dubois Design & Interieur" class="img-fluid logo-header">
+        </header>
+        <nav aria-label="breadcrumb" class="px-4 pt-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="startseite.html">Startseite</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Login</li>
+            </ol>
+        </nav>
+
+        <main class="p-4">
+            <div class="container mt-2 fs-5">
+                <h3 class="text-center mb-5">Login</h3>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-10 col-md-5 text-center mt-4">
+                        <div class="mb-3 text-start">
+                            <label class="fw-bold fs-5">Benutzername</label>
+                            <input type="text" class="form-control form-control-lg" placeholder="Benutzername" required>
+                        </div>
+                        <div class="mb-5 text-start">
+                            <label class="fw-bold fs-5">Passwort</label>
+                            <input type="password" class="form-control form-control-lg" placeholder="Passwort" required>
+                        </div>
+                        
+                        <button type="button" class="btn btn-light-gray btn-lg px-5 fs-5" onclick="loginRedirect()">Einloggen</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
