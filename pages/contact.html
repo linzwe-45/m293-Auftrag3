@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap" rel="stylesheet">      
+    </head>
+    <body>
+        <header>
+            
+                <div class="row" id="title">
+                  <div class="container" id="c1"><h1>My Music Collection</h1></div>
+                </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Startseite</a></li>
+                    <li><a href="collection.html">Musik Sammlung</a></li>
+                    <li><a href="aboutMe.html">Über mich</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="contact">
+            <form class="row">
+                <label class="form-label">Vorname* </label>
+                <input type="text" class="form-input" placeholder="Vorname" required>
+                <label class="form-label">Nachname*</label>
+                <input type="text" class="form-input" placeholder="Nachname" required>
+                <label class="form-label">Email*</label>
+                <input type="email" class="form-input" placeholder="Email" required>
+                <label class="form-label">Passwort*</label>
+                <input type="password" class="form-input" placeholder="Passwort" required>
+                <label class="checkbox-row">
+                    <input type="checkbox" class="checkbox-input">
+                    Konto erstellen
+                </label><label class="form-label">Beschreiben Sie Ihr Anliegen*</label>
+                <textarea class="form-input" rows="4" placeholder="Ihr Anliegen..." required></textarea>
+            </form>
+            <p class="text-muted">Pflichtfelder sind mit einem Stern (*) markiert und müssen ausgefüllt werden.</p>
+            <button type="button" class="btn-contact" onclick="validateAndRedirect()">Anfrage senden</button>
+        </main>
+
+        
+         <footer>
+             <div class="row">
+                <div class="container" id="c4">
+                    <p>&copy; 2025 MyCollections. Alle Rechte vorbehalten.</p>
+                    <a href="#">Datenschutz</a> | <a href="#">Impressum</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
