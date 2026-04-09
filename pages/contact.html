@@ -11,50 +11,91 @@
     </head>
     <body>
         <header>
+            <div id="title">
+                <h1>My Music Collection</h1></div>
+            </div>
             
-                <div class="row" id="title">
-                  <div class="container" id="c1"><h1>My Music Collection</h1></div>
-                </div>
-            
-            <nav>
+            <div class="burger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <nav id="nav">
                 <ul>
                     <li><a href="../index.html">Startseite</a></li>
                     <li><a href="collection.html">Musik Sammlung</a></li>
                     <li><a href="aboutMe.html">Über mich</a></li>
-                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a class="location" href="contact.html">Kontakt</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </header>
 
         <main class="contact">
+            <h2 class="titel2">Kontaktformular</h2>
             <form class="row">
                 <label class="form-label">Vorname* </label>
                 <input type="text" class="form-input" placeholder="Vorname" required>
                 <label class="form-label">Nachname*</label>
                 <input type="text" class="form-input" placeholder="Nachname" required>
+                <label class="form-label">Geschlecht*</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="geschlecht" value="m" required> Männlich</label>
+                    <label><input type="radio" name="geschlecht" value="w" required> Weiblich</label>
+                    <label><input type="radio" name="geschlecht" value="d" required> Divers</label>
+                </div>
+                <label class="form-label">Adresse*</label>
+                <input type="text" class="form-input" placeholder="Adresse" required>
+
+                <label class="form-label">PLZ*</label>
+                <input type="text" class="form-input" placeholder="PLZ" required>
+
+                <label class="form-label">Ort*</label>
+                <input type="text" class="form-input" placeholder="Ort" required>
+
+                <label class="form-label">Land*</label>
+                <select class="form-input" required>
+                    <option value="">Bitte wählen…</option>
+                    <option value="CH">Schweiz</option>
+                    <option value="DE">Deutschland</option>
+                    <option value="AT">Österreich</option>
+                </select>
+
                 <label class="form-label">Email*</label>
                 <input type="email" class="form-input" placeholder="Email" required>
                 <label class="form-label">Passwort*</label>
                 <input type="password" class="form-input" placeholder="Passwort" required>
-                <label class="checkbox-row">
+                <div class="form-label">Konto erstellen</div>
+                <div class="checkbox-row">
                     <input type="checkbox" class="checkbox-input">
-                    Konto erstellen
-                </label><label class="form-label">Beschreiben Sie Ihr Anliegen*</label>
+                </div>
+                <label class="form-label">Beschreiben Sie Ihr Anliegen*</label>
                 <textarea class="form-input" rows="4" placeholder="Ihr Anliegen..." required></textarea>
+                <div class="form-label">Datenschutz akzeptieren*</div>
+                <div class="checkbox-row">
+                    <input type="checkbox" class="checkbox-input" required>
+                </div>
+
             </form>
             <p class="text-muted">Pflichtfelder sind mit einem Stern (*) markiert und müssen ausgefüllt werden.</p>
-            <button type="button" class="btn-contact" onclick="validateAndRedirect()">Anfrage senden</button>
+            <button type="button" class="btn-contact" onclick="window.location.href='bestätigung.html'">Anfrage senden</button>
         </main>
 
         
-         <footer>
-             <div class="row">
-                <div class="container" id="c4">
-                    <p>&copy; 2025 MyCollections. Alle Rechte vorbehalten.</p>
-                    <a href="#">Datenschutz</a> | <a href="#">Impressum</a>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 MyCollections. Alle Rechte vorbehalten.</p>
+
+                <div class="footer-links">
+                    <a href="#">Datenschutz</a>
+                    <span>|</span>
+                    <a href="#">Impressum</a>
                 </div>
             </div>
         </footer>
+        <script>
+        function toggleMenu() {
+            document.getElementById("nav").classList.toggle("active");
+        }
+    </script>
     </body>
 </html>

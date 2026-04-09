@@ -1,36 +1,79 @@
-
-*{
+/*pink edafb8, beige= f7e1d7, grau 4A5759, starkes pink D96A85, weiss */
+body {
+    background-color: #F7E1D7;
+    color: #4A5759;
     font-family: Arial;
+    margin: 0;
 }
 
 header {
     text-align: center;
-    padding: 20px 0;
+    padding: 0;
+    margin: 0;
+    background-color: #EDAFB8;
+    color: white;
 }
 
-#title h1 {
+#title {
+    padding: 2rem 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+#title h1{
+    font-size: 3rem;
+    font-weight: 700;
     margin: 0;
+}
+
+.burger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav {
+    background-color: #D96A85;
+    padding: 18px 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 15px 0 0 0;
-
+    margin: 0;
     display: flex;
     justify-content: center;
-    gap: 25px; /* Abstand zwischen den Menüpunkten */
+    gap: 50px; /* Abstand zwischen den Menüpunkten */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #4A5759;
     font-weight: 600;
+    font-size: 1.4rem;
+}
+li a:hover{
+    color: white;
+    cursor: pointer;
+}
+.location {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.4rem;
 }
 
 /* Home flexbox */
 .home {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -40,15 +83,11 @@ nav ul li a {
     justify-content: space-between;
     gap: 2rem;
     margin-bottom: 3rem;
+    margin-top: 50px;
 }
 
 .hero-text {
     flex: 1;
-}
-
-.hero-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
 }
 
 .hero-text p {
@@ -60,22 +99,15 @@ nav ul li a {
     border-radius: 10px;
     object-fit: cover;
 }
+
+
 .career {
     margin-bottom: 3rem;
-}
-
-.career h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
 }
 
 .career p {
     font-size: 1.05rem;
     line-height: 1.7;
-    margin-bottom: 1rem;
-}
-.gallery h2 {
-    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -96,138 +128,370 @@ nav ul li a {
     transform: scale(1.03);
 }
 
-/* Login flexbox */
-.login {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 1rem;
-    font-family: sans-serif;
-}
-.row-btn {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.5rem;
+/* Footer */
+footer {
+    background-color: #4A5759; /* dunkles Grau */
+    color: #F7E1D7; /* helles Beige */
+    padding: 40px 0;
+    margin-top: 60px;
+    text-align: center;
 }
 
-.btn-login,
-.btn-forgot {
+footer p {
+    margin: 0;
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    font-size: 1.05rem;
+}
+
+.footer-links a {
+    color: #EDAFB8; /* Rosa Akzent */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0 8px;
+}
+
+.footer-links a:hover {
+    color: #D96A85; /* stärkeres Rosa */
+}
+
+.footer-links span {
+    color: #F7E1D7; /* Beige */
+}
+
+
+
+button {
+    margin-top: 1.2rem;
+    margin-left: auto;
+    display: block;
     padding: 0.8rem 1.2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border: none;
     border-radius: 5px;
-    background: #e9ecef;
+    background: #EDAFB8;
     cursor: pointer;
+    color: #4A5759;
+    font-weight: 600;
+}
+button:hover{
+    background: #D96A85;
+    color: white;
 }
 
-.btn-login:hover,
-.btn-forgot:hover {
-    background: #d6d8db;
+.button-row {
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.titel2 {
+    text-align: center;
+    margin: 50px 0 50px 0; /* oben | rechts | unten | links */
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4A5759;
+}
+
+
+/* Login flexbox */
+.login {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 /* Kontakt flexbox */
 .contact {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 1rem;
-    font-family: sans-serif;
 }
-
 form.row {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 0.8rem 1rem; /* vertikal | horizontal */
+    align-items: center;
+    font-size: 1.1rem;
 }
 .form-label {
     font-weight: 600;
     margin-bottom: 0.2rem;
+    font-family: Arial;
 }
-
 .form-input {
     padding: 0.6rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    border: 2px solid #EDAFB8;
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
 }
-
 .form-input:focus {
-    border-color: #007bff;
+    border-color: #D96A85;
     outline: none;
-    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 0 4px #4A5759;
 }
-
+.radio-group {
+    display: flex;
+    gap: 1rem;
+}
 .checkbox-row {
+    grid-column: 2;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-weight: 500;
-    margin-top: 0.5rem;
 }
 .checkbox-input {
     width: 18px;
     height: 18px;
 }
-
-
 .text-muted {
     font-size: 0.85rem;
-    color: #666;
+    color: #4A5759;
     margin-top: 1rem;
 }
 
-.btn-contact {
-    margin-top: 1.5rem;
-    padding: 0.8rem 1.2rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    background: #e9ecef;
-    cursor: pointer;
+/* */
+.confirmation {
+    max-width: 600px;
+    margin: 4rem auto;
+    text-align: center;
 }
 
-.btn-contact:hover {
-    background: #d6d8db;
+.about {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+.about-img img {
+    width: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.about-text {
+    flex:1;
+}
+.about-wrapper1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 
-
-/* Kollektion css grid */
+/* Song css grid */
+.collection {
+    margin: 4rem auto;
+}
 .song-grid {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 300px);
     gap: 25px;
     justify-content: center;
 }
-
 .song {
     background: white;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
 .song img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
-
-.song .title {
-    font-size: 1.2rem;
-    margin: 10px 0 5px;
+.song .titel {
+    font-size: 1.5rem;
+    margin: 18px 0 14px;
 }
-
 .song p {
     margin: 3px 0;
-    font-size: 0.9rem;
+    font-size: 1.05rem;
 }
-.song .songlist {
-    font-size: 0.9rem;
-    margin-top: 20px;
-}
-li a:hover{
-    color: rgb(207, 177, 156);
-    cursor: pointer;
 
+
+
+
+
+@media (max-width: 768px) {
+    #title {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    #title h1 {
+        font-size: 2rem;
+    }
+
+    .burger {
+        display: block;
+        background-color: #D96A85;
+        color: white;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    nav ul li a,
+    .location {
+        font-size: 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Gallery */
+    .gallery-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-row img {
+        width: 90%;
+    }
+
+    /* Allgemeiner Abstand */
+    .home {
+        padding: 1.5rem;
+    }
+    .confirmation {
+        padding: 1.5rem;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer p,
+    .footer-links,
+    .footer-links a {
+        font-size: 0.95rem;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+    
+
+    /* Formular: alles untereinander */
+    form.row {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: left;
+    }
+
+    /* Label über Input */
+    .form-label {
+        margin-top: 0.3rem;
+        margin-bottom: 0.1rem;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .form-input {
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Checkbox */
+    .checkbox-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        text-align: left;
+    }
+
+    /* Buttons untereinander */
+    .button-row {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start; /* linksbündig */
+        margin-top: 1rem;
+        align-items: flex-start; /* Buttons links */
+    }
+
+    button {
+        width: 100%;
+        margin-left: 0;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Titel2 */
+    .titel2 {
+        font-size: 1.6rem;
+        margin: 30px 0;
+    }
+
+    /* About Sektion */
+    .about-wrapper1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 1rem;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    /* Song Grid */
+    .song-grid {
+        grid-template-columns: 1fr; /* eine Spalte */
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .song {
+        padding: 10px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .titel {
+        font-size: 1.4rem;
+        margin: 11px 0;
+    }
+
+    .song p {
+        font-size: 0.95rem;
+        margin: 2px 0;
+    }
 }

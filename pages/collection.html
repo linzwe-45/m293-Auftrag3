@@ -11,15 +11,18 @@
     </head>
     <body>
         <header>
+            <div id="title">
+                <h1>My Music Collection</h1></div>
+            </div>
             
-                <div class="row" id="title">
-                  <div class="container" id="c1"><h1>Taylor Swifts Album Sammlung</h1></div>
-                </div>
-            
-            <nav>
+            <div class="burger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <nav id="nav">
                 <ul>
                     <li><a href="../index.html">Startseite</a></li>
-                    <li><a href="collection.html">Musik Sammlung</a></li>
+                    <li><a class="location" href="collection.html">Musik Sammlung</a></li>
                     <li><a href="aboutMe.html">Über mich</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
                     <li><a href="login.html">Login</a></li>
@@ -27,149 +30,150 @@
             </nav>
         </header>
 
-        <main>
+        <main class="collection">
+            <h2 class="titel2">Taylor Swifts Alben</h2>
             <section class="song-grid">
-
                 <article class="song">
                     <img src="../images/lover.png" alt="Lover Album">
                     <h2 class="titel">Lover</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2019</p>
-                    <p class="genre">Genre: Pop</p>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2019</p>
+                    <p class="genre"><b>Genre:</b> Pop</p>
                 </article>
                 <article class="song">
                     <img src="../images/reputation.png" alt="Reputation Album">
                     <h2 class="titel">Reputation</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2017</p>
-                    <p class="genre">Genre: Electropop</p>
-                </article>
-                <article class="song">
-                    <img src="../images/1989.png" alt="1989 Album">
-                    <h2 class="titel">1989</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2014</p>
-                    <p class="genre">Genre: Synth‑Pop</p>
-                </article>
-                <article class="song">
-                    <img src="../images/1989tv.png" alt="1989 Taylor's Version Album">
-                    <h2 class="titel">1989 (Taylor’s Version)</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2023</p>
-                    <p class="genre">Genre: Synth‑Pop</p>
-                </article>
-                <article class="song">
-                    <img src="../images/alb1.png" alt="Taylor Swift Debut Album">
-                    <h2 class="titel">Taylor Swift</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2006</p>
-                    <p class="genre">Genre: Country</p>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2017</p>
+                    <p class="genre"><b>Genre:</b> Electropop</p>
                 </article>
                 <article class="song">
                     <img src="../images/evermore.png" alt="Evermore Album">
                     <h2 class="titel">Evermore</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2020</p>
-                    <p class="genre">Genre: Indie‑Folk</p>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2020</p>
+                    <p class="genre"><b>Genre:</b> Indie‑Folk</p>
                 </article>
                 <article class="song">
-                    <img src="../images/fearless.png" alt="Fearless Album">
-                    <h2 class="titel">Fearless</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2008</p>
-                    <p class="genre">Genre: Country‑Pop</p>
+                    <img src="../images/1989.png" alt="1989 Album">
+                    <h2 class="titel">1989</h2>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2014</p>
+                    <p class="genre"><b>Genre:</b> Synth‑Pop</p>
                 </article>
                 <article class="song">
-                    <img src="../images/fearlesstv.png" alt="Fearless Taylor's Version Album">
-                    <h2 class="titel">Fearless (Taylor’s Version)</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2021</p>
-                    <p class="genre">Genre: Country‑Pop</p>
+                    <img src="../images/1989tv.png" alt="1989 Taylor's Version Album">
+                    <h2 class="titel">1989 (Taylor’s Version)</h2>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2023</p>
+                    <p class="genre"><b>Genre:</b> Synth‑Pop</p>
                 </article>
                 <article class="song">
                     <img src="../images/folklore.png" alt="Folklore Album">
                     <h2 class="titel">Folklore</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2020</p>
-                    <p class="genre">Genre: Indie‑Folk</p>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2020</p>
+                    <p class="genre"><b>Genre:</b> Indie‑Folk</p>
                 </article>
+                <article class="song">
+                    <img src="../images/fearless.png" alt="Fearless Album">
+                    <h2 class="titel">Fearless</h2>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2008</p>
+                    <p class="genre"><b>Genre:</b> Country‑Pop</p>
+                </article>
+                <article class="song">
+                    <img src="../images/fearlesstv.png" alt="Fearless Taylor's Version Album">
+                    <h2 class="titel">Fearless (Taylor’s Version)</h2>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2021</p>
+                    <p class="genre"><b>Genre:</b> Country‑Pop</p>
+                </article>
+                
                 <article class="song">
                     <img src="../images/midnight.png" alt="Midnights Album">
                     <h2 class="titel">Midnights</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2022</p>
-                    <p class="genre">Genre: Synth‑Pop</p>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2022</p>
+                    <p class="genre"><b>Genre:</b> Synth‑Pop</p>
                 </article>
                 <article class="song">
                     <img src="../images/poets.png" alt="The Tortured Poets Department Album">
                     <h2 class="titel">The Tortured Poets Department</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2024</p>
-                    <p class="genre">Genre: Alternative Pop</p>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2024</p>
+                    <p class="genre"><b>Genre:</b> Alternative Pop</p>
                 </article>
                 <article class="song">
                     <img src="../images/red.png" alt="Red Album">
                     <h2 class="titel">Red</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2012</p>
-                    <p class="genre">Genre: Pop / Country</p>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2012</p>
+                    <p class="genre"><b>Genre:</b> Pop / Country</p>
                 </article>
                 <article class="song">
                     <img src="../images/redtv.png" alt="Red Taylor's Version Album">
                     <h2 class="titel">Red (Taylor’s Version)</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2021</p>
-                    <p class="genre">Genre: Pop / Country</p>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2021</p>
+                    <p class="genre"><b>Genre:</b> Pop / Country</p>
                 </article>
                 <article class="song">
                     <img src="../images/showgirl.png" alt="The Life of a Showgirl Album">
                     <h2 class="titel">The Life of a Showgirl</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2025</p>
-                    <p class="genre">Genre: Pop</p>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2025</p>
+                    <p class="genre"><b>Genre:</b> Pop</p>
                 </article>
                 <article class="song">
                     <img src="../images/speaknow.png" alt="Speak Now Album">
                     <h2 class="titel">Speak Now</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2010</p>
-                    <p class="genre">Genre: Country‑Pop</p>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2010</p>
+                    <p class="genre"><b>Genre:</b> Country‑Pop</p>
                 </article>
                 <article class="song">
                     <img src="../images/speaknowtv.png" alt="Speak Now Taylor's Version Album">
                     <h2 class="titel">Speak Now (Taylor’s Version)</h2>
-                    <p class="singer">Singer: Taylor Swift</p>
-                    <p class="songwriter">Songwriter: Taylor Swift</p>
-                    <p class="year">Erscheinungsjahr: 2023</p>
-                    <p class="genre">Genre: Country‑Pop</p>
+                    <p class="singer"><b>Singer:</b> Taylor Swift</p>
+                    <p class="songwriter"><b>Songwriter:</b> Taylor Swift</p>
+                    <p class="year"><b>Erscheinungsjahr:</b> 2023</p>
+                    <p class="genre"><b>Genre:</b> Country‑Pop</p>
                 </article>
 
             </section>
         </main>
 
         
-         <footer>
-             <div class="row">
-                <div class="container" id="c4">
-                    <p>&copy; 2025 MyCollections. Alle Rechte vorbehalten.</p>
-                    <a href="#">Datenschutz</a> | <a href="#">Impressum</a>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 MyCollections. Alle Rechte vorbehalten.</p>
+
+                <div class="footer-links">
+                    <a href="#">Datenschutz</a>
+                    <span>|</span>
+                    <a href="#">Impressum</a>
                 </div>
             </div>
         </footer>
+        <script>
+        function toggleMenu() {
+            document.getElementById("nav").classList.toggle("active");
+        }
+    </script>
     </body>
 </html>

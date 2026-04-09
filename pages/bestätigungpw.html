@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
+        <title>Bestätigung Passwort</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,25 +25,20 @@
                     <li><a href="collection.html">Musik Sammlung</a></li>
                     <li><a href="aboutMe.html">Über mich</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
-                    <li><a class="location" href="login.html">Login</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main class="login">
-            <h2 class="titel2">Login</h2>
-            <form class="row">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-input" placeholder="Email" required>
-                <label class="form-label">Passwort</label>
-                <input type="password" class="form-input" placeholder="Passwort" required>
-                <div class="button-row">
-                    <button type="button" onclick="window.location.href='changePassword.html'">Passwort vergessen?</button>
-                    <button type="button" onclick="window.location.href='collection.html'">Login</button>
-                </div>
-            </form>
+        <main class="confirmation">
+            <h2>Ihr Passwort wurde zurückgesetzt!</h2>
+            <button class="btn-home" onclick="window.location.href='../index.html'">
+                Zur Startseite
+            </button>
         </main>
 
+
+        
         <footer>
             <div class="footer-content">
                 <p>&copy; 2025 MyCollections. Alle Rechte vorbehalten.</p>

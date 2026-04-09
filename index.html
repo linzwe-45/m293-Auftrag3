@@ -11,13 +11,18 @@
     </head>
     <body>
         <header>
-                <div class="row" id="title">
-                  <div class="container" id="c1"><h1>Taylor Swift Music</h1></div>
-                </div>
+            <div id="title">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <h1>TS Music Collection</h1></div>
+            </div>
             
-            <nav>
+            <div class="burger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <nav id="nav">
                 <ul>
-                    <li><a href="index.html">Startseite</a></li>
+                    <li><a class="location" href="index.html">Startseite</a></li>
                     <li><a href="pages/collection.html">Musik Sammlung</a></li>
                     <li><a href="pages/aboutMe.html">Über mich</a></li>
                     <li><a href="pages/contact.html">Kontakt</a></li>
@@ -25,10 +30,11 @@
                 </ul>
             </nav>
         </header>
+        
         <main class="home">
             <section class="hero">
                 <div class="hero-text">
-                    <h1>Taylor Swift</h1>
+                    <h2>Taylor Swift</h2>
                     <p>
                         Taylor Swift ist eine der einflussreichsten Künstlerinnen des 21. Jahrhunderts. 
                         Ihre Musik verbindet starke Emotionen, persönliche Geschichten und kreative 
@@ -71,19 +77,23 @@
                     <img src="images/Eras.png" alt="Taylor Swift">
                 </div>
             </section>
-
-
-
         </main>
 
         <footer>
-             <div class="row">
-                <div class="container" id="c4">
-                    <p>&copy; 2025 MyCollections. Alle Rechte vorbehalten.</p>
-                    <a href="#">Datenschutz</a> | <a href="#">Impressum</a>
+            <div class="footer-content">
+                <p>&copy; 2025 MyCollections. Alle Rechte vorbehalten.</p>
+
+                <div class="footer-links">
+                    <a href="#">Datenschutz</a>
+                    <span>|</span>
+                    <a href="#">Impressum</a>
                 </div>
             </div>
         </footer>
-    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav").classList.toggle("active");
+        }
+    </script>
     </body>
 </html> 

@@ -11,33 +11,77 @@
     </head>
     <body>
         <header>
+            <div id="title">
+                <h1>My Music Collection</h1></div>
+            </div>
             
-                <div class="row" id="title">
-                  <div class="container" id="c1"><h1>My Music Collection</h1></div>
-                </div>
-            
-            <nav>
+            <div class="burger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <nav id="nav">
                 <ul>
                     <li><a href="../index.html">Startseite</a></li>
                     <li><a href="collection.html">Musik Sammlung</a></li>
-                    <li><a href="aboutMe.html">Über mich</a></li>
+                    <li><a class="location" href="aboutMe.html">Über mich</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
+        <main class="about">
+            <h2 class="titel2">Über Mich</h2>
+            <section class="about-wrapper1">
+                <div class="about-img">
+                    <img src="../images/profil.jpg" alt="Profilbild">
+                </div>
+
+                <div>
+                    <h3>Hallo, ich bin Emilia Hartmann</h3>
+                    <p>
+                        Ich bin 24 Jahre alt, komme aus Zürich und bin leidenschaftliche Musikliebhaberin.
+                        Seit vielen Jahren begleitet mich Taylor Swifts Musik durch meinen Alltag – ihre
+                        Geschichten, Emotionen und ihr Mut, sich immer wieder neu zu erfinden, inspirieren mich
+                        unglaublich.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <p>
+                    Genau deshalb habe ich diese Fanwebseite erstellt: um meine Begeisterung für Taylor Swift
+                    mit anderen zu teilen, ihre Musik zu feiern und einen Ort zu schaffen, an dem Fans
+                    stöbern, entdecken und sich austauschen können. Die gesamte Seite wurde von mir gestaltet,
+                    aufgebaut und mit viel Liebe zum Detail umgesetzt.
+                </p>
+                <p>
+                    Wenn ich nicht gerade an neuen Ideen für die Webseite arbeite, verbringe ich meine Zeit
+                    gerne mit Fotografie, kleinen Designprojekten oder gemütlichen Abenden mit Freunden und
+                    guter Musik. Kreativität ist für mich ein wichtiger Teil meines Lebens – und Taylor Swift
+                    ist eine der Künstlerinnen, die mich immer wieder dazu inspiriert.
+                </p>
+                <p class="quote">
+                    „Musik verbindet uns – und Taylor Swifts Songs erzählen Geschichten, die wir alle fühlen.“
+                </p>
+            </section>
         </main>
 
         
-         <footer>
-             <div class="row">
-                <div class="container" id="c4">
-                    <p>&copy; 2025 MyCollections. Alle Rechte vorbehalten.</p>
-                    <a href="#">Datenschutz</a> | <a href="#">Impressum</a>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 MyCollections. Alle Rechte vorbehalten.</p>
+
+                <div class="footer-links">
+                    <a href="#">Datenschutz</a>
+                    <span>|</span>
+                    <a href="#">Impressum</a>
                 </div>
             </div>
         </footer>
+        <script>
+        function toggleMenu() {
+            document.getElementById("nav").classList.toggle("active");
+        }
+    </script>
     </body>
 </html>
