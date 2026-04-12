@@ -15,15 +15,15 @@ header {
 }
 
 #title {
-    padding: 2rem 0;
+    padding: 1rem 0;
     margin-top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 45px;
 }
 .logo {
-    width: 80px;
+    width: 120px;
     height: auto;
 }
 
@@ -58,7 +58,7 @@ nav ul li a {
     text-decoration: none;
     color: #4A5759;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 li a:hover{
     color: white;
@@ -68,7 +68,7 @@ li a:hover{
     text-decoration: none;
     color: white;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 /* Home flexbox */
@@ -76,6 +76,11 @@ li a:hover{
     max-width: 700px;
     margin: 0 auto;
     padding: 2rem;
+}
+.hero-video {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
 }
 .hero {
     display: flex;
@@ -91,7 +96,7 @@ li a:hover{
 }
 
 .hero-text p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.6;
 }
 .hero-img img {
@@ -148,18 +153,18 @@ footer p {
 }
 
 .footer-links a {
-    color: #EDAFB8; /* Rosa Akzent */
+    color: #EDAFB8; 
     text-decoration: none;
     font-weight: 600;
     padding: 0 8px;
 }
 
 .footer-links a:hover {
-    color: #D96A85; /* stärkeres Rosa */
+    color: #D96A85;
 }
 
 .footer-links span {
-    color: #F7E1D7; /* Beige */
+    color: #F7E1D7; 
 }
 
 
@@ -169,7 +174,7 @@ button {
     margin-left: auto;
     display: block;
     padding: 0.8rem 1.2rem;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     border: none;
     border-radius: 5px;
     background: #EDAFB8;
@@ -180,6 +185,10 @@ button {
 button:hover{
     background: #D96A85;
     color: white;
+}
+.btn-home {
+    display: block;
+    margin: 1.2rem auto 0 auto; /* oben | rechts/links auto | unten */
 }
 
 .button-row {
@@ -216,7 +225,7 @@ form.row {
     grid-template-columns: 150px 1fr;
     gap: 0.8rem 1rem; /* vertikal | horizontal */
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 .form-label {
     font-weight: 600;
@@ -225,11 +234,12 @@ form.row {
 }
 .form-input {
     padding: 0.6rem;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     border: 2px solid #EDAFB8;
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
+    font-family: Arial;
 }
 .form-input:focus {
     border-color: #D96A85;
@@ -267,7 +277,7 @@ form.row {
     max-width: 700px;
     margin: 0 auto;
     padding: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 .about-img img {
     width: 250px;
@@ -356,6 +366,9 @@ form.row {
     .location {
         font-size: 1.5rem;
     }
+    .hero-video {
+        height: 40vh;
+    }
 
     /* Hero Section */
     .hero {
@@ -393,7 +406,7 @@ form.row {
     footer p,
     .footer-links,
     .footer-links a {
-        font-size: 0.95rem;
+        font-size: 1.05rem;
     }
 
     .footer-links {
@@ -416,12 +429,12 @@ form.row {
     .form-label {
         margin-top: 0.3rem;
         margin-bottom: 0.1rem;
-        font-size: 1rem;
+        font-size: 1.05rem;
         text-align: left;
     }
 
     .form-input {
-        width: 100%;
+        width: 90%;
         text-align: left;
     }
 
@@ -441,23 +454,31 @@ form.row {
         margin-top: 1rem;
         align-items: flex-start; /* Buttons links */
     }
+    .button-row button {
+        width: 100%;
+    }
 
     button {
-        width: 100%;
-        margin-left: 0;
+        width: 50%;
+        margin: 0 auto;
         padding: 0.8rem 1rem;
-        font-size: 1rem;
+        font-size: 1.05rem;
         text-align: center;
     }
 
     /* Titel2 */
     .titel2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         margin: 30px 0;
     }
 
     /* About Sektion */
     .about-wrapper1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-wrapper2 {
         flex-direction: column;
         text-align: center;
     }
