@@ -12,9 +12,11 @@ Aus diesem Grund gibt es auch die Möglichkeit, einen Account zu erstellen, dami
 ![Wireframe Contact](images/wireframe2.jpg) 
 
 ## Styleguide
-* Logo -> Simples Logo welches die Farben der Webseite & das Kürzel des Namens "Taylors Version" nochmals aufbring. 
+* Logo -> Simples Logo welches die Farben der Webseite & das Kürzel des Namens "Taylor Swift" nochmals aufbring. 
     ![Logo](images/logo2.jpg) 
+    
 * Farbschema
+![Farbschema](images/farbschema.jpg) 
     * Weiss
     * Beige = #F7E1D7
     * Helles Rosa = #EDAFB8

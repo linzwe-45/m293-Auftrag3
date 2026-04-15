@@ -330,7 +330,9 @@ form.row {
 
 @media (max-width: 768px) {
     #title {
-        flex-direction: column;
+         display: flex;
+    align-items: center;      /* vertikal mittig */
+    justify-content: center;
         gap: 10px;
     }
 
