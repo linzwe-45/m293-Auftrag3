@@ -34,14 +34,14 @@
 
         <main class="login">
             <h2 class="titel2">Login</h2>
-            <form class="row">
+            <form class="row" action="collection.html">
                 <label class="form-label">Email</label>
                 <input type="email" class="form-input" placeholder="Email" required>
                 <label class="form-label">Passwort</label>
                 <input type="password" class="form-input" placeholder="Passwort" required>
                 <div class="button-row">
                     <button type="button" onclick="window.location.href='changePassword.html'">Passwort vergessen?</button>
-                    <button type="button" onclick="window.location.href='collection.html'">Login</button>
+                    <button type="submit">Login</button>
                 </div>
             </form>
         </main>
@@ -57,10 +57,6 @@
                 </div>
             </div>
         </footer>
-        <script>
-        function toggleMenu() {
-            document.getElementById("nav").classList.toggle("active");
-        }
-    </script>
+        <script src="../script/script.js"></script>
     </body>
 </html>

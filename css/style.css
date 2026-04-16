@@ -191,6 +191,11 @@ button:hover{
     margin: 1.2rem auto 0 auto; /* oben | rechts/links auto | unten */
 }
 
+.btn-contact {
+    display: block;
+    margin-left: auto;
+}
+
 .button-row {
     grid-column: 2;
     display: flex;
@@ -240,6 +245,7 @@ form.row {
     width: 100%;
     box-sizing: border-box;
     font-family: Arial;
+    color: #4A5759;
 }
 .form-input:focus {
     border-color: #D96A85;
@@ -261,9 +267,11 @@ form.row {
     height: 18px;
 }
 .text-muted {
+    display: flex;
+    justify-content: center;
     font-size: 0.85rem;
     color: #4A5759;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 /* */
@@ -462,20 +470,32 @@ form.row {
     .button-row {
         flex-direction: column;
         gap: 10px;
-        justify-content: flex-start; /* linksbündig */
+        justify-content: flex-start;
         margin-top: 1rem;
-        align-items: flex-start; /* Buttons links */
+        align-items: flex-start;
     }
+
     .button-row button {
         width: 100%;
+        margin: 0;
     }
 
     button {
         width: 50%;
-        margin: 0 auto;
+        margin: 1.5rem auto 8rem auto;
         padding: 0.8rem 1rem;
         font-size: 1.05rem;
         text-align: center;
+    }
+
+    .btn-home {
+    display: block;
+    margin: 3rem auto 8rem auto; /* oben | rechts/links auto | unten */
+    }
+
+    .btn-contact {
+    display: block;
+    margin: 1.5rem auto 0 auto; /* oben | rechts/links auto | unten */
     }
 
     /* Titel2 */
